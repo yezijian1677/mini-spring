@@ -28,4 +28,5 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 
 		return beanDefinition;
 	}
+
 }
