@@ -28,8 +28,7 @@ public class CglibSubclassingInstantiationStrategy implements InstantiationStrat
 		enhancer.setCallback(new MethodInterceptor() {
 			@Override
 			public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-				methodProxy.invokeSuper(o, objects);
-				return null;
+				return methodProxy.invokeSuper(o, objects);
 			}
 		});
 		return enhancer.create();
